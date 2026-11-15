@@ -593,7 +593,8 @@ font_ui = pygame.font.SysFont("Courier New", 25)
 font_mono_small = pygame.font.SysFont("Courier New", 18, bold=True)
 
 
-BACKGROUND_PATH = "/root/JuiceMind/project/assets/Free Pixel Art Forest/Preview/Background.png"
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+BACKGROUND_PATH = os.path.join(BASE_DIR, "Background.png")
 
 
 def load_background(BACKGROUND_PATH):
